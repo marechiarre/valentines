@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('background.avif');
+  background-repeat: no-repeat; /* Prevent background from repeating */
+  background-size: cover; /* or background-size: contain; depending on your preference */
+  font-family: "Press Start 2P", system-ui;
+}
+
+.passcode-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.passcode-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  border: 3px solid black; /* Add border for the big square */
+  border-radius: 10px;
+  padding: 20px; /* Add padding for inner elements */
+  background: linear-gradient(to bottom, #87CEEB, #B0E0E6); 
+}
+
+.passcode-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.passcode-value span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #050505;
+  background-color: #fffcfc;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.passcode-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(4, 60px);
+  gap: 5px;
+  margin-left: 30px;
+}
+
+.passcode-input {
+  background-color: #fff;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: background-color 0.3s;
+}
+
+.passcode-input:hover {
+  background-color: #f2f2f2;
+}
+
+.passcode-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.passcode-input.submit {
+  margin-right: 5px;
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  border: 10px;
+  background-color:#FFA500;
+  color: white;
+}
+
+.passcode-input.delete {
+  margin-left: 5px;
+  width: 80px;
+  border: 1px solid black;
+  border: 10px;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+}
+
+.passcode-input.zero {
+  grid-column: 2;
+  grid-row: 4;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  align-items: center;
+}
+
+.modal-content {
+  font-size: 10px;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 20px;
+  color: rgb(253, 253, 55);
+  -webkit-text-stroke: 1px black; /* Add text stroke */
+ 
+}
+.home {
+  font-size: 20px;
+  color: #FFCB05;
+  -webkit-text-stroke: 1px black; /* Add text stroke */
+  display: inline-block; /* Ensure the paragraph behaves like an inline element */
+  vertical-align: middle; /* Align the paragraph vertically */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+}
+
+img {
+  position: absolute; /* Position the image absolutely within its parent */
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  vertical-align: middle; /* Align the image vertically */
+  margin-top: 80px;
+}
+.bubu-dudu-image {
+ margin-top: 300px;
+}
+
